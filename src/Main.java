@@ -9,6 +9,9 @@ public class Main {
 
     public static List<String> runIterative(String[] words) {
         List<String> result = new ArrayList<>();
+        if (words == null || words.length == 0) {
+            return result;
+        }
         result.add("");
 
         for (String word : words) {
